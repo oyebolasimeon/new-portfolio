@@ -1,10 +1,10 @@
 <?php
 
 
- $name = $_POST['name']
- $email = $_POST['email']
- $mes = $_POST['message']
- $subject = $_POST['subject']
+ $name = $_POST['name'];
+ $email = $_POST['email'];
+ $mes = $_POST['message'];
+ $subject = $_POST['subject'];
 
 $headers = "MIME-Version: 1.0" . "\r\n";
 $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
@@ -25,9 +25,9 @@ $message = "<html>
 </html>";
 
 if(mail('simeonoyekunleoyebola@gmail.com', $subject, $message, $headers)){
-  echo "<script>location.href='../index.html'</script>"
-} else{
-  echo "Failed to send email. Please try again"
+  echo "<script>location.href='../index.html'</script>";
+} else {
+  echo "Failed to send email. Please try again";
 }
 
 ?>
